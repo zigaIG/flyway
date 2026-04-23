@@ -570,11 +570,19 @@ ul { list-style: none; }
     .nav-desktop-only { display: list-item; }
     .nav-mobile-only  { display: none; }
 
+    .section { padding: 3rem 0 5rem; }
+
     .services-grid         { grid-template-columns: repeat(2, 1fr); }
     .locations-grid        { grid-template-columns: repeat(2, 1fr); gap: 4rem; }
     .gallery-grid          { grid-template-columns: repeat(3, 1fr); }
     .contact-grid          { grid-template-columns: 1fr 1fr; align-items: center; }
     .footer-inner          { flex-direction: row; justify-content: space-between; text-align: left; }
+
+    #locations, #about, #contact {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
 }
 
 /* ===========================
