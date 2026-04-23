@@ -3,6 +3,7 @@
 // ===========================
 const translations = {
     hr: {
+        nav_letovi:            'Letovi',
         nav_paragliding:       'Tandem Paragliding',
         nav_airplane:          'Panoramski Letovi',
         nav_locations:         'Lokacije',
@@ -43,6 +44,7 @@ const translations = {
         footer_rights:         'Sva prava pridržana.'
     },
     en: {
+        nav_letovi:            'Flights',
         nav_paragliding:       'Tandem Paragliding',
         nav_airplane:          'Panoramic Flights',
         nav_locations:         'Locations',

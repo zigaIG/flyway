@@ -559,10 +559,17 @@ ul { list-style: none; }
     transform: translateY(-2px);
 }
 
+/* Nav visibility helpers */
+.nav-desktop-only { display: none; }
+.nav-mobile-only  { display: list-item; }
+
 /* ===========================
    RESPONSIVE — Tablet 768px+
    =========================== */
 @media (min-width: 768px) {
+    .nav-desktop-only { display: list-item; }
+    .nav-mobile-only  { display: none; }
+
     .services-grid         { grid-template-columns: repeat(2, 1fr); }
     .locations-grid        { grid-template-columns: repeat(2, 1fr); gap: 4rem; }
     .gallery-grid          { grid-template-columns: repeat(3, 1fr); }
