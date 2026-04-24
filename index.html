@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>FlyWay Aeroklub – Tandem Paragliding i Panoramski Letovi | Zagreb</title>
+    <title>FlyWay Aeroklub – Tandem Paragliding Zagreb | Panoramski Letovi Avionom</title>
     <meta name="description" content="FlyWay Aeroklub nudi tandem paragliding letove i panoramske letove avionom u Hrvatskoj. Polazišta: Japetić, Ivanščica, Kalnik, Varaždin, Lučko. Rezervirajte svoju avanturu!">
     <meta name="keywords" content="paragliding tandem Zagreb, panoramski letovi avionom Hrvatska, tandem paragliding, aeroklub Zagreb, letovi Japetić, letovi Ivanščica, paragliding Hrvatska">
     <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="HR-01">
+    <meta name="geo.placename" content="Zagreb, Hrvatska">
     <link rel="canonical" href="https://www.flyway.hr/">
 
     <!-- Open Graph -->
@@ -30,6 +32,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <link rel="icon" type="image/png" href="images/flyway_favicon.png">
+    <link rel="apple-touch-icon" href="images/flyway_favicon.png">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- JSON-LD Structured Data -->
@@ -57,7 +61,7 @@
                     "contactType": "reservations"
                 },
                 "sameAs": [
-                    "https://www.instagram.com/paraglidingtandemcroatia"
+                    "https://www.instagram.com/flyway.hr"
                 ]
             },
             {
@@ -83,7 +87,7 @@
     <header class="site-header">
         <nav class="navbar" role="navigation" aria-label="Glavna navigacija">
             <a href="#home" class="nav-logo" aria-label="FlyWay Aeroklub - Početna">
-                <img src="images/fw_logo_white.png" alt="FlyWay Aeroklub logo" width="140" height="50">
+                <img src="images/fw_logo_white.png" alt="FlyWay Aeroklub – tandem paragliding i panoramski letovi Zagreb" width="140" height="50">
             </a>
 
             <button class="hamburger" id="hamburger" aria-label="Otvori izbornik" aria-expanded="false" aria-controls="nav-menu">
@@ -96,6 +100,7 @@
                 <li class="nav-desktop-only"><a href="#services" class="nav-link" data-i18n="nav_letovi">Letovi</a></li>
                 <li class="nav-mobile-only"><a href="#paragliding" class="nav-link" data-i18n="nav_paragliding">Tandem Paragliding</a></li>
                 <li class="nav-mobile-only"><a href="#airplane" class="nav-link" data-i18n="nav_airplane">Panoramski Letovi</a></li>
+                <li><a href="#safety" class="nav-link" data-i18n="nav_safety">Sigurnost</a></li>
                 <li><a href="#locations" class="nav-link" data-i18n="nav_locations">Lokacije</a></li>
                 <li><a href="#gallery" class="nav-link" data-i18n="nav_gallery">Galerija</a></li>
                 <li><a href="#about" class="nav-link" data-i18n="nav_about">O Nama</a></li>
@@ -113,7 +118,7 @@
         <!-- HERO -->
         <section id="home" class="hero" aria-label="Hero">
             <div class="hero-content">
-                <h1 data-i18n="hero_headline">Doživite slobodu leta</h1>
+                <h1 data-i18n="hero_headline">Tandem Paragliding i Panoramski Letovi Zagreb</h1>
                 <p class="hero-sub" data-i18n="hero_sub">Nezaboravna avantura s iskusnim licenciranim tandem pilotima</p>
                 <a href="#contact" class="btn btn-primary" data-i18n="hero_cta">Rezervirajte let</a>
             </div>
@@ -122,13 +127,13 @@
         <!-- SERVICES -->
         <section id="services" class="section section-light" aria-labelledby="services-heading">
             <div class="container">
-                <h2 id="services-heading" class="section-title" data-i18n="services_title">Naše usluge</h2>
+                <h2 id="services-heading" class="section-title" data-i18n="services_title">Letovi</h2>
                 <div class="services-grid">
 
                     <!-- Paragliding -->
                     <article id="paragliding" class="service-card" aria-labelledby="para-heading">
                         <div class="service-icon">
-                            <img src="images/paraglider_p.png" alt="Paragliding ikona" width="80" height="80">
+                            <img src="images/paraglider_p.png" alt="Tandem paragliding ikona – letovi iz Japetića i Ivanščice" width="80" height="80">
                         </div>
                         <h3 id="para-heading" data-i18n="para_title">Tandem Paragliding</h3>
                         <p data-i18n="para_desc">Doživite uzbuđenje leta padobranom s iskusnim tandem pilotom. Ne trebate prethodno iskustvo — mi se pobrinemo za sve!</p>
@@ -138,12 +143,17 @@
                             <li><span class="detail-icon" aria-hidden="true">🎥</span><span data-i18n="detail_video">Mogućnost snimanja akcijskom kamerom</span></li>
                             <li><span class="detail-icon" aria-hidden="true">👦</span><span data-i18n="detail_minors">Maloljetnici uz suglasnost roditelja</span></li>
                         </ul>
+                        <div class="service-extra">
+                            <!-- Future standalone page: /paragliding-zagreb -->
+                            <p data-i18n="para_extra1">Tandem paragliding u Zagrebu — polazišta Japetić, Ivanščica i Kalnik, spektakularni pogledi na Zagorje i Medvednicu. Bez prethodnog iskustva, od 8 godina.</p>
+                            <a href="paragliding-zagreb.html" class="btn btn-secondary-outline" data-i18n="para_more">Saznaj više</a>
+                        </div>
                     </article>
 
                     <!-- Airplane Tours -->
                     <article id="airplane" class="service-card" aria-labelledby="air-heading">
                         <div class="service-icon">
-                            <img src="images/avion.png" alt="Avion ikona" width="80" height="80">
+                            <img src="images/avion.png" alt="Panoramski letovi avionom ikona – Varaždin i Lučko aerodrom" width="80" height="80">
                         </div>
                         <h3 id="air-heading" data-i18n="air_title">Panoramski Letovi Avionom</h3>
                         <p data-i18n="air_desc">Uživajte u spektakularnim pogledima iz zraka uz prilagođene rute. Grupe do tri putnika, polijetanje s Varaždinskog ili Lučkog aerodroma.</p>
@@ -152,14 +162,43 @@
                             <li><span class="detail-icon" aria-hidden="true">👥</span><span data-i18n="air_detail2">Grupe do 3 putnika</span></li>
                             <li><span class="detail-icon" aria-hidden="true">📍</span><span data-i18n="air_detail3">Varaždin & Lučko aerodrom</span></li>
                         </ul>
+                        <div class="service-extra">
+                            <!-- Future standalone page: /panoramski-let-avionom -->
+                            <p data-i18n="air_extra1">Panoramski letovi avionom iz Varaždina ili Lučkog aerodroma — prilagođene rute iznad Hrvatske, do 3 putnika. Idealno za posebne prilike i nezaboravan poklon.</p>
+                            <a href="panoramski-let-avionom.html" class="btn btn-secondary-outline" data-i18n="air_more">Saznaj više</a>
+                        </div>
                     </article>
 
                 </div>
             </div>
         </section>
 
+        <!-- SAFETY -->
+        <section id="safety" class="section section-dark" aria-labelledby="safety-heading">
+            <div class="container">
+                <h2 id="safety-heading" class="section-title" data-i18n="safety_title">Sigurnost</h2>
+                <div class="safety-grid">
+                    <div class="safety-item">
+                        <div class="safety-icon" aria-hidden="true">🛡️</div>
+                        <h3 data-i18n="safety_licensed_title">Licencirani piloti</h3>
+                        <p data-i18n="safety_licensed_desc">Svi naši piloti posjeduju važeće licence i redovito prolaze provjere i usavršavanja prema pravilima Hrvatskog zrakoplovnog saveza.</p>
+                    </div>
+                    <div class="safety-item">
+                        <div class="safety-icon" aria-hidden="true">🪂</div>
+                        <h3 data-i18n="safety_equipment_title">Certificirana oprema</h3>
+                        <p data-i18n="safety_equipment_desc">Koristimo isključivo atestiranu paragliding i zrakoplovnu opremu koja se redovito servisira i zamjenjuje prema propisanim rokovima.</p>
+                    </div>
+                    <div class="safety-item">
+                        <div class="safety-icon" aria-hidden="true">📋</div>
+                        <h3 data-i18n="safety_insurance_title">Osiguranje</h3>
+                        <p data-i18n="safety_insurance_desc">Svaki let pokriven je obveznim zrakoplovnim osiguranjem. Vaša sigurnost i mir uma naš su prioritet broj jedan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- LOCATIONS -->
-        <section id="locations" class="section section-dark" aria-labelledby="locations-heading">
+        <section id="locations" class="section section-light" aria-labelledby="locations-heading">
             <div class="container">
                 <h2 id="locations-heading" class="section-title" data-i18n="locations_title">Lokacije</h2>
                 <div class="locations-grid">
@@ -170,23 +209,23 @@
                             <h3 data-i18n="locations_para_heading">Mjesta polijetanja — Paragliding</h3>
                         </div>
                         <ul class="location-cards">
-                            <li><a href="https://maps.google.com/?q=Japetić+paragliding+Samobor" target="_blank" rel="noopener noreferrer" class="location-card">
+                            <li><a href="https://maps.app.goo.gl/WNcV5vKJo7GmSqnL9" target="_blank" rel="noopener noreferrer" class="location-card">
                                 <span class="loc-name">Japetić</span>
                                 <svg class="loc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
                             </a></li>
-                            <li><a href="https://maps.google.com/?q=Ivanščica+paragliding+Hrvatska" target="_blank" rel="noopener noreferrer" class="location-card">
+                            <li><a href="https://maps.app.goo.gl/DP7WxaT5oBAkoyiM8" target="_blank" rel="noopener noreferrer" class="location-card">
                                 <span class="loc-name">Ivanščica</span>
                                 <svg class="loc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
                             </a></li>
-                            <li><a href="https://maps.google.com/?q=Ravna+Gora+Zagorje+paragliding" target="_blank" rel="noopener noreferrer" class="location-card">
+                            <li><a href="https://maps.app.goo.gl/jG7msH3N1afyZURn9" target="_blank" rel="noopener noreferrer" class="location-card">
                                 <span class="loc-name">Ravna Gora (Zagorje)</span>
                                 <svg class="loc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
                             </a></li>
-                            <li><a href="https://maps.google.com/?q=Kalnik+paragliding+Hrvatska" target="_blank" rel="noopener noreferrer" class="location-card">
+                            <li><a href="https://maps.app.goo.gl/RLe3CD22jvQFApmW9" target="_blank" rel="noopener noreferrer" class="location-card">
                                 <span class="loc-name">Kalnik</span>
                                 <svg class="loc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
                             </a></li>
-                            <li><a href="https://maps.google.com/?q=Tribalj+Vinodol+paragliding" target="_blank" rel="noopener noreferrer" class="location-card">
+                            <li><a href="https://maps.app.goo.gl/dRtYtPwwd5zsiYR27" target="_blank" rel="noopener noreferrer" class="location-card">
                                 <span class="loc-name">Tribalj (Vinodol)</span>
                                 <svg class="loc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
                             </a></li>
@@ -199,11 +238,11 @@
                             <h3 data-i18n="locations_air_heading">Polijetanje — Avion</h3>
                         </div>
                         <ul class="location-cards">
-                            <li><a href="https://maps.google.com/?q=Aerodrom+Varaždin+LDVA" target="_blank" rel="noopener noreferrer" class="location-card">
+                            <li><a href="https://maps.app.goo.gl/fCzYF7hV7f4VvDzJ8" target="_blank" rel="noopener noreferrer" class="location-card">
                                 <span class="loc-name" data-i18n="loc_varazdin">Varaždin Aerodrom</span>
                                 <svg class="loc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
                             </a></li>
-                            <li><a href="https://maps.google.com/?q=Aerodrom+Lučko+Zagreb" target="_blank" rel="noopener noreferrer" class="location-card">
+                            <li><a href="https://maps.app.goo.gl/y8bR3Hvhhawu7wzm7" target="_blank" rel="noopener noreferrer" class="location-card">
                                 <span class="loc-name" data-i18n="loc_lucko">Lučko Aerodrom</span>
                                 <svg class="loc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
                             </a></li>
@@ -215,13 +254,10 @@
         </section>
 
         <!-- GALLERY -->
-        <section id="gallery" class="section section-light" aria-labelledby="gallery-heading">
+        <section id="gallery" class="section section-dark" aria-labelledby="gallery-heading">
             <div class="container">
                 <h2 id="gallery-heading" class="section-title" data-i18n="gallery_title">Galerija</h2>
                 <div class="gallery-grid">
-                    <!-- TODO: Replace each placeholder div with a real <img> tag:
-                         <img src="images/photo1.jpg" alt="Tandem paragliding iznad Japetića" loading="lazy">
-                    -->
                     <div class="gallery-placeholder"><span data-i18n="gallery_placeholder">Dodajte fotografiju</span></div>
                     <div class="gallery-placeholder"><span data-i18n="gallery_placeholder">Dodajte fotografiju</span></div>
                     <div class="gallery-placeholder"><span data-i18n="gallery_placeholder">Dodajte fotografiju</span></div>
@@ -286,7 +322,7 @@
                             <span class="contact-icon" aria-hidden="true">📸</span>
                             <div>
                                 <strong>Instagram</strong>
-                                <a href="https://www.instagram.com/paraglidingtandemcroatia" target="_blank" rel="noopener noreferrer">@paraglidingtandemcroatia</a>
+                                <a href="https://www.instagram.com/flyway.hr" target="_blank" rel="noopener noreferrer">@flyway.hr</a>
                             </div>
                         </div>
                     </address>
@@ -307,14 +343,15 @@
     <footer class="site-footer" role="contentinfo">
         <div class="container footer-inner">
             <div class="footer-logo">
-                <img src="images/fw_logo_white.png" alt="FlyWay Aeroklub logo" width="120" height="43">
+                <img src="images/fw_logo_white.png" alt="FlyWay Aeroklub – tandem paragliding i panoramski letovi Zagreb" width="120" height="43">
             </div>
             <div class="footer-info">
                 <p>OIB: 35336358814 &nbsp;|&nbsp; IBAN: HR5123600001102160788</p>
                 <p>&copy; <span id="year"></span> FlyWay Aeroklub. <span data-i18n="footer_rights">Sva prava pridržana.</span></p>
+                <p><a href="pravila-privatnosti.html" style="color:var(--color-accent); text-decoration:underline; font-size:0.85rem;">Pravila privatnosti</a></p>
             </div>
             <div class="footer-social">
-                <a href="https://www.instagram.com/paraglidingtandemcroatia" target="_blank" rel="noopener noreferrer" aria-label="FlyWay na Instagramu">
+                <a href="https://www.instagram.com/flyway.hr" target="_blank" rel="noopener noreferrer" aria-label="FlyWay na Instagramu">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                     </svg>
@@ -323,6 +360,18 @@
         </div>
     </footer>
 
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Obavijest o kolačićima" hidden>
+        <div class="cookie-banner-inner">
+            <p class="cookie-text">Koristimo Google Analytics kolačiće kako bismo poboljšali stranicu. <a href="pravila-privatnosti.html">Pravila privatnosti</a></p>
+            <div class="cookie-actions">
+                <button id="cookie-decline" class="btn-cookie btn-cookie-decline">Odbij</button>
+                <button id="cookie-accept"  class="btn-cookie btn-cookie-accept">Prihvati</button>
+            </div>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
+    <script src="js/cookies.js"></script>
 </body>
 </html>
