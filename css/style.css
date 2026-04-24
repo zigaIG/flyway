@@ -164,6 +164,8 @@ ul { list-style: none; }
 
 /* Language toggle */
 .lang-toggle {
+    display: inline-block;
+    text-align: center;
     background: transparent;
     border: 2px solid var(--color-accent);
     color: var(--color-accent);
@@ -175,6 +177,7 @@ ul { list-style: none; }
     cursor: pointer;
     transition: var(--transition);
     min-width: 52px;
+    text-decoration: none;
 }
 
 .lang-toggle:hover,
